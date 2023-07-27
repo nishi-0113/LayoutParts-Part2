@@ -1,1 +1,40 @@
 @charset "UTF-8";
+
+.container {
+    position: relative;
+    width: 500px;
+    background-color: #fed296;
+    border:  solid 5px #8f5a0e;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 10%;
+    transform: translateX(-50%);
+    border-top: 20px solid #8f5a0e;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 10%;
+    transform: translateX(-50%);
+    border-top: 13px solid #fed296;
+    border-right: 13px solid transparent;
+    border-left: 13px solid transparent;
+}

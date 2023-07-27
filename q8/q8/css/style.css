@@ -1,2 +1,12 @@
 @charset "UTF-8";
 
+.img3 img{
+    text-align: center;
+    width: 100%;
+}
+
+.img4 img {
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+}

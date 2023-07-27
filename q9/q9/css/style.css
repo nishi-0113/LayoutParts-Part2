@@ -1,4 +1,235 @@
 @charset "UTF-8";
 
 /* カード内の画像は以下のURLを使用して下さい */
-/* https://picsum.photos/id/1005/200/300 */
+
+
+
+/* q9-1 */
+.box1 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #76ff826b;
+}
+
+.q1 {
+    animation-name: Anime;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes Anime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* q9-2 */
+.q2 {
+    animation-name: Anime2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+@keyframes Anime2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* q9-3 */
+.q3 {
+    animation-name: Anime3;
+    animation: 4s infinite Anime3;
+}
+
+@keyframes Anime3 {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+
+    50% {
+        transform: rotateX(-180deg) rotateY(0);
+    }
+
+    100% {
+        transform: rotateX(-180deg) rotateY(-180deg);
+    }
+}
+
+/* q4 */
+.box2 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #331aefd0;
+    transition-duration: 0.5s;
+}
+
+.box2:hover {
+    background-color: #ff27e2c9;
+}
+
+/* q5 */
+.box3 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #331aefd0;
+    transition-duration: 0.5s;
+}
+
+.box3:hover {
+    animation: 3s linear infinite rotate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* q6 */
+.box4 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #331aefd0;
+    transition-duration: 0.5s;
+
+}
+
+.box4:hover {
+    transform: translateY(-20%);
+}
+
+/* q7 */
+.box5 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #331aefd0;
+    transition-duration: 0.5s;
+}
+
+.box5:hover {
+    transform: translateX(20%);
+}
+
+/* q8 */
+.box6 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #331aefd0;
+    transition-duration: 0.5s;
+}
+
+.box6:hover {
+    height: 300px;
+}
+
+/* q9 */
+.box7 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #331aefd0;
+    transition-duration: 0.5s;
+}
+
+.box7:hover {
+    width: 500px;
+}
+
+/* 10 */
+.box8 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #331aefd0;
+    transition-duration: 0.5s;
+}
+
+.box8:hover {
+    border: 10px #00ffe5 solid;
+    box-sizing: border-box;
+}
+
+/* 11 */
+.box9 {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: #331aefd0;
+    transition-duration: 0.5s;
+}
+
+.box9:hover {
+    box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+/* 12 */
+.box10 {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 10px #ecf1f2;
+    border-top: #14ff4bcd solid 10px;
+    animation: 1.1s linear infinite cycle;
+}
+
+@keyframes cycle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 13 */
+.container {
+    display: flex;
+}
+
+.article {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: center;
+    background-position: center;
+}
+
+.article:hover {
+    box-shadow: 0px 0px 10px 3px #424242d0;
+}
+
+/* q10 */
